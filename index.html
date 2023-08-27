@@ -32,23 +32,79 @@
          <button class="hamburger js-open-menu "    aria-expanded="false"
          aria-controls="mobile-menu">
             <svg  width="32px" height="22px">
-              <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
             </svg>
           </button> 
           <!--         HAMBURGER      MODAL              -->         
           <div class="hamburger-menu js-menu-container" id="mobile-menu">
-            <button class="modal-close  js-close-menu" >
+            <button class="modal-close-hamburger  js-close-menu " >
               <svg class="modal-close-button" width="24px" height="24px">
               <use  href="./images/icons.svg#close-black"></use>
               </svg>
             </button>            
-              <ul class="menu-nav-menu">
-                <li>
-                  <a class="link-menu line" href="./index.html">Studio</a>
+              <ul class="menu-nav-hamburger">
+                <li class="hamburger-menu-contacts"><a   href="./index.html">Studio</a></li>
+                <li class="hamburger-menu-contacts"><a   href="./portfolio.html">Portfolio</a></li>
+                <li class="hamburger-menu-contacts"><a   href="#">Contacts</a></li>
+              </ul> 
+              <address>
+                <ul class="hamburger-contacts menu-nav-contact" >
+                  <li class="link-contact">
+                    <a  class="hamburger-phone" href="mailto:info@devstudio.com"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                  <li class="hamburger-email-li link-contact">
+                    <a class="hamburger-email " href="tel:+11(000)111-11-11"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>   
+                <!--  shown -->
+                <ul class="hamburger-contacts menu-nav-contact-show" >
+                  <li class="link-contact">
+                    <a  class="hamburger-phone" href="mailto:info@devstudio.com"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                  <li class="hamburger-email-li link-contact">
+                    <a class="hamburger-email " href="tel:+11(000)111-11-11"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>  
+                <!--  shown  -->
+              </address>   
+              <ul class=" hamburger-trailing-wrap">
+                <li class="icon-ellipse">
+                  <a class="team-card-icon-div" href="#">
+                    <svg class="team-card-icon">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li><a class="link-menu" href="./portfolio.html">Portfolio</a></li>
-                <li><a class="link-menu link-last" href="#">Contacts</a></li>
-              </ul>            
+                <li class="icon-ellipse">
+                  <a class="team-card-icon-div" href="#">
+                    <svg class="team-card-icon">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-ellipse">
+                  <a class="team-card-icon-div" href="#">
+                    <svg class="team-card-icon">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-ellipse">
+                  <a class="team-card-icon-div" href="#">
+                    <svg class="team-card-icon">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>       
           </div>        
                 <!--         HAMBURGER      MODAL              -->
         <address class="address-header">
@@ -495,7 +551,7 @@
               		
                 			<input id="subscribe-button" class="footer-input-subscribe"	type="email"  name="Subscribe"  placeholder="E-mail"/>                		
 					 	   </label>
-							<div role="group" aria-labelledby="Subscribe-wrapper">
+							<div class="to-move-button" role="group" aria-labelledby="Subscribe-wrapper">
 							 <button class="footer-button-subscribe" type="submit" id="Subscribe-wrapper"> Subscribe
                 	<svg class="subscribe-svg">
                     <use href="./images/icons.svg#icon-Frame-3"></use>		
