@@ -6,11 +6,12 @@ body {
   letter-spacing: 0.02em;
   background-color: var(--wite-background);
   width: 428px;
-   margin: 16 auto;
+   margin: auto;
 }
 @media (min-width: 768px) {
   body {
     width: 768px;
+    margin: auto;
       }
 }
 @media (min-width: 1200px) {
@@ -232,6 +233,11 @@ ul {
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+}
+@media (min-width: 1200px) {
+  .hamburger-menu {
+    display: none;
+  }
 }
 .hamburger-menu.is-open {
   transform: translateX(0);
@@ -800,6 +806,7 @@ ul {
   padding-bottom: 24px;
   display: grid;
   grid-template-columns: 1fr auto;
+  height: 70px;
 }
 @media (min-width: 768px) {
   .top-link-div {
